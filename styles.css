@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif; /*Fuente*/
+    background-color: #f7f3f9; /* Fondo del body*/
+    text-align: center; /* centrado de h1*/
+    padding: 20px; /*centrado general*/
+}
+
+h1 {
+    color: #6a5b99; /*color fuente h1 */
+}
+
+form {
+    margin: auto; /* centrado del formulario*/
+    padding: 20px; /* centrado del formulario*/
+    border: 2px solid #d4a6c8; /* tamaño y color borde*/
+    border-radius: 10px; /* redondeado del borde*/
+    background-color: #ffffff; /* color fondo del formulario */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* sombreado de formulario*/
+    width: 300px; /*ancho formulario*/
+}
+
+fieldset {
+    border: 1px solid #d4a6c8; /* tamaño y color del borde */
+    padding: 10px; /* centrado */
+    margin: 10px 0; /* centrado*/
+}
+
+legend {
+    font-weight: bold; /* fuente*/
+}
+
+label {
+    display: block; /* */
+    margin: 10px 0 5px; /* centrado*/
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"] {
+    width: calc(100% - 20px);
+    padding: 8px; /* centrado inputs*/
+    border: 1px solid #d4a6c8; /* tamaño y color borde */
+    border-radius: 5px; /* redondeado del borde*/
+}
+
+button {
+    background-color: #6a5b99; /* Fondo en morado pastel */
+    color: #ffffff; /* Texto en blanco */
+    padding: 10px 15px; /* espaciado y centrado*/
+    border: none; /* sin borde*/
+    border-radius: 5px; /* redondeado */
+    cursor: pointer; /* tipo de cursor al pasar por encima */
+    transition: background-color 0.3s; /* transicion para cambio de color */
+    margin: 5px; /* margen */
+}
+
+button:hover {
+    background-color: #4e417b; /* Cambio de color en button */
+}

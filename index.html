@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Etiquetas meta -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica 10</title> 
+    <meta name="description" content="Práctica 10 formulario"> 
+    <meta name="keywords" content="HTML,CSS, práctica, formulario">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Práctica 10</h1>
+    <form action="https://httpbin.org/post" method="POST"> <!--formulario con método POST-->
+        <fieldset> <!--agrupación de campos datos personales-->
+            <legend>Datos Personales</legend>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
+
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" id="apellidos" name="apellidos" placeholder="Escribe tus apellidos" required>
+
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="Escribe tu teléfono" required>
+
+            <label for="direccion">Dirección:</label>
+            <input type="text" id="direccion" name="direccion" placeholder="Escribe tu dirección" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Escribe tu email" required>
+        </fieldset>
+
+        <fieldset> <!--agrupación de campos seleccionar cursos con inputs tipo checkbox-->
+            <legend>Seleccionar Curso</legend>
+            <label>
+                <input type="checkbox" name="curso" value="Front End"> Curso Front End
+            </label>
+            <label>
+                <input type="checkbox" name="curso" value="Java"> Curso de Java
+            </label>
+            <label>
+                <input type="checkbox" name="curso" value="Full Stack"> Curso Full Stack
+            </label>
+        </fieldset>
+
+        <button type="submit">Enviar</button> <!--boton de envio-->
+        <button type="reset">Reiniciar</button> <!--boton reiniciar-->
+    </form>
+</body>
+</html>
